@@ -287,7 +287,7 @@ Requirements:
 - Use the brand colors: teal {spec['brand_colors']['teal']} and navy {spec['brand_colors']['navy']}
 - Professional, clean layout with good use of whitespace
 - Include: title (centered), organization name (centered), total messages (LEFT-aligned, not centered), high-frequency warnings (full-width amber/orange banner spanning the entire page width), error summary table, and the provided ring chart image for errors-per-message distribution
-- The error summary table should use auto column widths that adapt to content size. The Error Type column should be left-aligned and wider. Count and Percentage columns should be CENTER-aligned text. No content should be cut off — ensure the table fits within page margins.
+- The error summary table MUST have a header row with columns: "Error Type", "Count", "Percentage" — use a <thead> with styled header cells in the navy brand color with white text. The Error Type column should be left-aligned and wider. Count and Percentage columns should be CENTER-aligned text. No content should be cut off — ensure the table fits within page margins.
 - For the errors-per-message distribution, embed the pre-rendered ring chart image using: <img src="{spec['ring_chart_image']}" alt="Errors per Message" style="width:420px;height:290px"> — do NOT generate any CSS chart, just use this image tag exactly as provided.
 - The page must fit on exactly one printed page (use @media print and @page rules)
 - Use modern CSS (flexbox/grid) for layout
