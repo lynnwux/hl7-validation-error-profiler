@@ -194,8 +194,8 @@ Requirements:
 - Use the brand colors: teal {spec['brand_colors']['teal']} and navy {spec['brand_colors']['navy']}
 - Professional, clean layout with good use of whitespace
 - Include: title (centered), organization name (centered), total messages (LEFT-aligned, not centered), high-frequency warnings (full-width amber/orange banner spanning the entire page width), error summary table, and errors-per-message distribution as a CSS-only ring/donut chart (NOT a bar chart)
-- The error summary table should use auto column widths that adapt to content size (NOT table-layout:fixed). The Error Type column should be wider, Count and Percentage columns narrower. No content should be cut off on the right — ensure the table fits within page margins.
-- For the errors-per-message distribution, render a CSS-only ring/donut chart showing the proportion of messages with 1, 2, 3, 4+ errors. Use distinct colors and a legend. IMPORTANT: Label each segment of the ring directly with its percentage value (e.g. "65%", "20%") positioned on or near the ring arc for easy reading.
+- The error summary table should use auto column widths that adapt to content size. The Error Type column should be left-aligned and wider. Count and Percentage columns should be CENTER-aligned text. No content should be cut off — ensure the table fits within page margins.
+- For the errors-per-message distribution, use a CSS conic-gradient ring/donut chart. Each percentage label MUST be positioned ON the ring arc itself (use absolute positioning with transform to place labels at the midpoint angle of each segment around the circle) — do NOT stack labels in the center. Place a vertical legend to the RIGHT of the ring chart (use flexbox row layout), with colored squares and labels stacked vertically.
 - The page must fit on exactly one printed page (use @media print and @page rules)
 - Use modern CSS (flexbox/grid) for layout
 - Make it visually polished — suitable for presenting to a client
