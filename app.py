@@ -76,12 +76,12 @@ def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Return (message_df, error_summary_df)."""
     for enc in ("utf-8", "cp1252", "latin-1"):
         try:
-            df = pd.read_csv(csv_path, encoding=enc)
+            df = pd.read_csv(csv_path, encoding=enc, engine="python", on_bad_lines="warn")
             break
-        except UnicodeDecodeError:
+        except (UnicodeDecodeError, pd.errors.ParserError):
             continue
     else:
-        st.error("Unable to read CSV — unsupported file encoding.")
+        st.error("Unable to read CSV — unsupported encoding or malformed data.")
         st.stop()
 
     # Validate required columns
