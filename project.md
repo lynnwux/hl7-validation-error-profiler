@@ -162,7 +162,7 @@ The subprocess (`html_to_pdf.py`) reads HTML from stdin, renders via Playwright 
 - High-frequency warnings (amber/orange styled)
 - Error summary table with CSS-based horizontal bar chart
 - Errors-per-message distribution summary
-- Footer: "© {current year} Indiana Health Information Exchange. All rights reserved."
+- Footer: "© {current year} Yours Truly HIE. All rights reserved."
 
 ### PDF UX
 - Sidebar export section is wrapped in `@st.fragment` so PDF generation does not gray out the main dashboard

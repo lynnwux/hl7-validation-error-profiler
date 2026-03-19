@@ -165,7 +165,7 @@ Requirements:
 - The page must fit on exactly one printed page (use @media print and @page rules)
 - Use modern CSS (flexbox/grid) for layout
 - Make it visually polished — suitable for presenting to a client
-- Include a footer at the bottom of the page: "© {datetime.now().year} Indiana Health Information Exchange. All rights reserved."
+- Include a footer at the bottom of the page: "© {datetime.now().year} Yours Truly HIE. All rights reserved."
 
 Here is the report data as JSON:
 
