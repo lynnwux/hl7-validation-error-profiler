@@ -235,10 +235,17 @@ else:
 
 msg_df, summary_df = load_and_process(csv_source)
 
+_is_cloud = not Path(__file__).parent.joinpath(".env").exists()
+
 @st.fragment
 def _pdf_sidebar():
     st.markdown("---")
     st.markdown("### Export PDF Report")
+    if _is_cloud:
+        st.text_input("Who is the report for?", placeholder="e.g. Community Hospital", disabled=True)
+        st.button("Generate PDF Report", disabled=True)
+        st.caption("PDF export is only available when running locally.")
+        return
     org = st.text_input("Who is the report for?", placeholder="e.g. Community Hospital")
     if org.strip():
         if st.button("Generate PDF Report"):
