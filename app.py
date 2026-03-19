@@ -3,13 +3,19 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+import os
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent / ".env")
 
-import openai
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
+# Support Streamlit Cloud secrets as fallback for .env
+if not os.environ.get("OPENAI_API_KEY") and "OPENAI_API_KEY" in st.secrets:
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
+import openai
 
 st.set_page_config(page_title="HL7 Validation Error Profiler", layout="wide")
 
