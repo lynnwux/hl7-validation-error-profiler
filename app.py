@@ -193,11 +193,13 @@ Requirements:
 - All CSS must be inline in a <style> tag — no external resources
 - Use the brand colors: teal {spec['brand_colors']['teal']} and navy {spec['brand_colors']['navy']}
 - Professional, clean layout with good use of whitespace
-- Include: title, organization name, total messages, high-frequency warnings (full-width amber/orange banner spanning the entire page width), error summary table, a CSS-based horizontal bar chart for error distribution, and a summary of errors-per-message distribution
+- Include: title, organization name, total messages, high-frequency warnings (full-width amber/orange banner spanning the entire page width), error summary table, and errors-per-message distribution as a CSS-only ring/donut chart (NOT a bar chart)
+- The error summary table MUST fit within page margins — use table-layout:fixed, width:100%, word-wrap:break-word so no content is cut off on the right
+- For the errors-per-message distribution, render a CSS-only ring/donut chart showing the proportion of messages with 1, 2, 3, 4+ errors. Use distinct colors and a legend.
 - The page must fit on exactly one printed page (use @media print and @page rules)
 - Use modern CSS (flexbox/grid) for layout
 - Make it visually polished — suitable for presenting to a client
-- Include a footer at the bottom of the page: "© {datetime.now().year} Yours Truly HIE. All rights reserved."
+- The footer "© {datetime.now().year} Yours Truly HIE. All rights reserved." MUST be fixed at the absolute bottom of the page, centered horizontally, using position:fixed; bottom:0; width:100% so it always appears at the page bottom regardless of content length
 
 Here is the report data as JSON:
 
