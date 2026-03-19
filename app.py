@@ -1,4 +1,6 @@
+import base64
 import json
+import math
 import re
 from datetime import datetime
 from pathlib import Path
@@ -147,10 +149,104 @@ INTERSYSTEMS_TEAL = "#00B2A9"
 INTERSYSTEMS_NAVY = "#002B5C"
 
 
+RING_COLORS = ["#00B2A9", "#002B5C", "#7C3AED", "#475569"]
+
+
+def _build_ring_chart_svg(distribution: list[dict]) -> str:
+    """Build an SVG donut chart with labels on the arc and a legend on the right."""
+    total = sum(d["message_count"] for d in distribution)
+    if total == 0:
+        return ""
+
+    cx, cy, r_outer, r_inner = 140, 140, 120, 70
+    svg_parts = [
+        '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="290" viewBox="0 0 420 290">',
+        '<style>text{font-family:Arial,Helvetica,sans-serif}</style>',
+    ]
+
+    angle = -90  # start at top
+    for i, d in enumerate(distribution):
+        count = d["message_count"]
+        frac = count / total
+        sweep = frac * 360
+        color = RING_COLORS[i % len(RING_COLORS)]
+        pct_label = f"{frac * 100:.0f}%"
+
+        # Arc start/end
+        a1 = math.radians(angle)
+        a2 = math.radians(angle + sweep)
+        large = 1 if sweep > 180 else 0
+
+        # Outer arc
+        ox1, oy1 = cx + r_outer * math.cos(a1), cy + r_outer * math.sin(a1)
+        ox2, oy2 = cx + r_outer * math.cos(a2), cy + r_outer * math.sin(a2)
+        # Inner arc
+        ix1, iy1 = cx + r_inner * math.cos(a2), cy + r_inner * math.sin(a2)
+        ix2, iy2 = cx + r_inner * math.cos(a1), cy + r_inner * math.sin(a1)
+
+        path = (
+            f"M {ox1:.1f} {oy1:.1f} "
+            f"A {r_outer} {r_outer} 0 {large} 1 {ox2:.1f} {oy2:.1f} "
+            f"L {ix1:.1f} {iy1:.1f} "
+            f"A {r_inner} {r_inner} 0 {large} 0 {ix2:.1f} {iy2:.1f} Z"
+        )
+        svg_parts.append(f'<path d="{path}" fill="{color}"/>')
+
+        # Label on arc midpoint
+        mid_angle = math.radians(angle + sweep / 2)
+        r_label = (r_outer + r_inner) / 2
+        lx = cx + r_label * math.cos(mid_angle)
+        ly = cy + r_label * math.sin(mid_angle)
+        # Count on top, percentage below
+        svg_parts.append(
+            f'<text x="{lx:.1f}" y="{ly - 6:.1f}" text-anchor="middle" '
+            f'fill="white" font-size="13" font-weight="bold">{count}</text>'
+        )
+        svg_parts.append(
+            f'<text x="{lx:.1f}" y="{ly + 10:.1f}" text-anchor="middle" '
+            f'fill="white" font-size="11">{pct_label}</text>'
+        )
+
+        angle += sweep
+
+    # Center label
+    svg_parts.append(
+        f'<text x="{cx}" y="{cy - 6}" text-anchor="middle" fill="#333" '
+        f'font-size="13" font-weight="bold">Errors</text>'
+    )
+    svg_parts.append(
+        f'<text x="{cx}" y="{cy + 12}" text-anchor="middle" fill="#333" '
+        f'font-size="13" font-weight="bold">per Msg</text>'
+    )
+
+    # Legend on the right
+    legend_x = 290
+    legend_y_start = 80
+    for i, d in enumerate(distribution):
+        y = legend_y_start + i * 28
+        color = RING_COLORS[i % len(RING_COLORS)]
+        n = d["num_errors"]
+        label = f"{n} Error{'s' if n != 1 else ''}"
+        svg_parts.append(f'<rect x="{legend_x}" y="{y}" width="14" height="14" rx="2" fill="{color}"/>')
+        svg_parts.append(
+            f'<text x="{legend_x + 20}" y="{y + 12}" fill="#333" font-size="13">{label}</text>'
+        )
+
+    svg_parts.append("</svg>")
+    return "\n".join(svg_parts)
+
+
 def build_report_spec(msg_df: pd.DataFrame, summary_df: pd.DataFrame, org_name: str = "") -> dict:
     """Build a JSON spec describing the report data."""
     total = len(msg_df)
     error_counts = msg_df["error_count"].value_counts().sort_index()
+    distribution = [
+        {"num_errors": int(n), "message_count": int(c)}
+        for n, c in error_counts.items()
+    ]
+    ring_svg = _build_ring_chart_svg(distribution)
+    ring_b64 = base64.b64encode(ring_svg.encode("utf-8")).decode("ascii")
+    ring_data_uri = f"data:image/svg+xml;base64,{ring_b64}"
     return {
         "title": "HL7 Validation Error Profiler",
         "organization": org_name,
@@ -171,10 +267,7 @@ def build_report_spec(msg_df: pd.DataFrame, summary_df: pd.DataFrame, org_name: 
             }
             for _, r in summary_df.iterrows()
         ],
-        "errors_per_message_distribution": [
-            {"num_errors": int(n), "message_count": int(c)}
-            for n, c in error_counts.items()
-        ],
+        "ring_chart_image": ring_data_uri,
         "brand_colors": {
             "teal": INTERSYSTEMS_TEAL,
             "navy": INTERSYSTEMS_NAVY,
@@ -193,9 +286,9 @@ Requirements:
 - All CSS must be inline in a <style> tag — no external resources
 - Use the brand colors: teal {spec['brand_colors']['teal']} and navy {spec['brand_colors']['navy']}
 - Professional, clean layout with good use of whitespace
-- Include: title (centered), organization name (centered), total messages (LEFT-aligned, not centered), high-frequency warnings (full-width amber/orange banner spanning the entire page width), error summary table, and errors-per-message distribution as a CSS-only ring/donut chart (NOT a bar chart)
+- Include: title (centered), organization name (centered), total messages (LEFT-aligned, not centered), high-frequency warnings (full-width amber/orange banner spanning the entire page width), error summary table, and the provided ring chart image for errors-per-message distribution
 - The error summary table should use auto column widths that adapt to content size. The Error Type column should be left-aligned and wider. Count and Percentage columns should be CENTER-aligned text. No content should be cut off — ensure the table fits within page margins.
-- For the errors-per-message distribution, use a CSS conic-gradient ring/donut chart. Each percentage label MUST be positioned ON the ring arc itself (use absolute positioning with transform to place labels at the midpoint angle of each segment around the circle) — do NOT stack labels in the center. Place a vertical legend to the RIGHT of the ring chart (use flexbox row layout), with colored squares and labels stacked vertically.
+- For the errors-per-message distribution, embed the pre-rendered ring chart image using: <img src="{spec['ring_chart_image']}" alt="Errors per Message" style="width:420px;height:290px"> — do NOT generate any CSS chart, just use this image tag exactly as provided.
 - The page must fit on exactly one printed page (use @media print and @page rules)
 - Use modern CSS (flexbox/grid) for layout
 - Make it visually polished — suitable for presenting to a client
