@@ -342,6 +342,7 @@ def generate_pdf(msg_df: pd.DataFrame, summary_df: pd.DataFrame, org_name: str =
 
 st.title("HL7 Validation Error Profiler")
 
+
 # File selection – default to bundled sample, or allow upload
 default_csv = Path(__file__).parent / "exportQueryN.csv"
 
@@ -395,7 +396,11 @@ st.markdown("---")
 
 col_stats, col_ring = st.columns([3, 1])
 with col_stats:
-    st.metric("Total Messages Analyzed", total_messages)
+    st.markdown(
+        f"<p style='color:gray; font-size:1.72em; margin:0 0 0.1em 0'>Total Messages Analyzed</p>"
+        f"<p style='font-size:1.72em; font-weight:bold; margin:0'>{total_messages}</p>",
+        unsafe_allow_html=True,
+    )
     # High-frequency warnings
     high_freq = summary_df[summary_df["percentage"] > 50]
     for _, row in high_freq.iterrows():
@@ -411,8 +416,8 @@ with col_stats:
     for i, (_, row) in enumerate(summary_df.iterrows()):
         with summary_cols[i % 3]:
             st.markdown(
-                f"<p style='font-size:0.86em; color:gray; margin:0.2em 0'>"
-                f"{row['error_type']} : <span style='font-size:0.94em; font-weight:bold; color:#002B5C'>{row['percentage']}%</span></p>",
+                f"<p style='font-size:1.72em; color:gray; margin:0.2em 0'>"
+                f"{row['error_type']} : <span style='font-weight:bold; color:#002B5C'>{row['percentage']:.0f}%</span></p>",
                 unsafe_allow_html=True,
             )
 
@@ -433,7 +438,7 @@ with col_ring:
         margin=dict(t=0, b=0, l=0, r=0),
         height=365,
         showlegend=True,
-        legend=dict(font=dict(size=12), orientation="h", y=-0.15),
+        legend=dict(font=dict(size=24), orientation="v", y=0.5, yanchor="middle"),
         annotations=[dict(text="Errors<br>per Msg", x=0.5, y=0.5, font_size=13, showarrow=False)],
     )
     ring_fig.update_traces(textinfo="value+percent", textfont_size=12)
