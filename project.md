@@ -25,13 +25,25 @@ Default sample file: `exportQueryN.csv`
 
 ### Key CSV Columns
 
-| Column      | Description                                    |
-| ----------- | ---------------------------------------------- |
-| MessageId   | Unique message identifier                      |
-| SessionId   | Session identifier (used for Visual Trace URL) |
-| ConfigName  | Source component name (filter to `router_Router`) |
-| TimeLogged  | Timestamp of the log entry                     |
-| Text        | Raw validation error text                      |
+The CSV may contain any subset of columns from the InterSystems Event Log table. The application requires only these five columns and gracefully ignores any extras:
+
+| Column      | Required | Description                                    |
+| ----------- | -------- | ---------------------------------------------- |
+| MessageId   | Yes      | Unique message identifier                      |
+| SessionId   | Yes      | Session identifier (used for Visual Trace URL) |
+| ConfigName  | Yes      | Source component name (filter to `router_Router`) |
+| TimeLogged  | Yes      | Timestamp of the log entry                     |
+| Text        | Yes      | Raw validation error text                      |
+| ID          | No       | Row identifier from source table               |
+| Job         | No       | Job identifier                                 |
+| SourceClass | No       | Originating class                              |
+| SourceMethod| No       | Originating method                             |
+| Stack       | No       | Error stack trace                              |
+| StatusValue | No       | Status code                                    |
+| TraceCat    | No       | Trace category                                 |
+| Type        | No       | Log entry type                                 |
+
+If required columns are missing, the app displays an error and stops.
 
 ### Error Text Format
 

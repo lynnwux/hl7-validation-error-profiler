@@ -69,11 +69,27 @@ def normalize_error(raw: str) -> str:
     return raw.strip()[:120]  # fallback – truncated raw text
 
 
-def load_and_process(csv_path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+REQUIRED_COLUMNS = {"ConfigName", "MessageId", "SessionId", "TimeLogged", "Text"}
+
+
+def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Return (message_df, error_summary_df)."""
     df = pd.read_csv(csv_path)
+
+    # Validate required columns
+    missing = REQUIRED_COLUMNS - set(df.columns)
+    if missing:
+        st.error(
+            f"CSV is missing required column(s): **{', '.join(sorted(missing))}**. "
+            f"Expected columns: {', '.join(sorted(REQUIRED_COLUMNS))}."
+        )
+        st.stop()
+
     # Filter to only router_Router validation rows
     df = df[df["ConfigName"] == "router_Router"].copy()
+    if df.empty:
+        st.error("No rows with ConfigName 'router_Router' found in the CSV.")
+        st.stop()
     df = df.reset_index(drop=True)
 
     rows = []
