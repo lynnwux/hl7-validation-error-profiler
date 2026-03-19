@@ -74,7 +74,15 @@ REQUIRED_COLUMNS = {"ConfigName", "MessageId", "SessionId", "TimeLogged", "Text"
 
 def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Return (message_df, error_summary_df)."""
-    df = pd.read_csv(csv_path)
+    for enc in ("utf-8", "cp1252", "latin-1"):
+        try:
+            df = pd.read_csv(csv_path, encoding=enc)
+            break
+        except UnicodeDecodeError:
+            continue
+    else:
+        st.error("Unable to read CSV — unsupported file encoding.")
+        st.stop()
 
     # Validate required columns
     missing = REQUIRED_COLUMNS - set(df.columns)
