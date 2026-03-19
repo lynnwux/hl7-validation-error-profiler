@@ -76,9 +76,11 @@ def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Return (message_df, error_summary_df)."""
     for enc in ("utf-8", "cp1252", "latin-1"):
         try:
+            if hasattr(csv_path, "seek"):
+                csv_path.seek(0)
             df = pd.read_csv(csv_path, encoding=enc, engine="python", on_bad_lines="warn")
             break
-        except (UnicodeDecodeError, pd.errors.ParserError):
+        except (UnicodeDecodeError, pd.errors.ParserError, pd.errors.EmptyDataError):
             continue
     else:
         st.error("Unable to read CSV — unsupported encoding or malformed data.")
