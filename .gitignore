@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+exportQuery.csv
+test_report.pdf

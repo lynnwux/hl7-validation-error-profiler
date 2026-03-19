@@ -1,0 +1,301 @@
+ID,ConfigName,Job,MessageId,SessionId,SourceClass,SourceMethod,Text,TimeLogged,TraceCat,Type
+2028,router_Router,43120,1243,1243,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1243 with message body Id=705, Doc Identifier=334700.20745, SessionId=1243 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.479,,Error
+2027,router_Router,43120,1242,1242,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1242 with message body Id=704, Doc Identifier=334700.20744, SessionId=1242 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.456,,Error
+2026,router_Router,43120,1241,1241,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1241 with message body Id=703, Doc Identifier=334700.20743, SessionId=1241 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.432,,Error
+2025,router_Router,43120,1240,1240,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1240 with message body Id=702, Doc Identifier=334700.20742, SessionId=1240 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.408,,Error
+2024,router_Router,43120,1239,1239,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1239 with message body Id=701, Doc Identifier=334700.20741, SessionId=1239 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.386,,Error
+2023,router_Router,43120,1238,1238,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1238 with message body Id=700, Doc Identifier=334700.20740, SessionId=1238 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.362,,Error
+2022,router_Router,43120,1237,1237,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1237 with message body Id=699, Doc Identifier=334700.20739, SessionId=1237 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.339,,Error
+2021,router_Router,43120,1236,1236,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1236 with message body Id=698, Doc Identifier=334700.20738, SessionId=1236 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.320,,Error
+2020,router_Router,43120,1235,1235,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1235 with message body Id=697, Doc Identifier=334700.20737, SessionId=1235 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.295,,Error
+2019,router_Router,43120,1234,1234,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1234 with message body Id=696, Doc Identifier=334700.20736, SessionId=1234 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.270,,Error
+2018,router_Router,43120,1233,1233,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1233 with message body Id=695, Doc Identifier=334700.20735, SessionId=1233 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.250,,Error
+2017,router_Router,43120,1232,1232,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1232 with message body Id=694, Doc Identifier=334700.20734, SessionId=1232 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.226,,Error
+2016,router_Router,43120,1231,1231,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1231 with message body Id=693, Doc Identifier=334700.20733, SessionId=1231 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.201,,Error
+2015,router_Router,43120,1230,1230,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1230 with message body Id=692, Doc Identifier=334700.20732, SessionId=1230 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.178,,Error
+2014,router_Router,43120,1229,1229,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1229 with message body Id=691, Doc Identifier=334700.20731, SessionId=1229 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.154,,Error
+2013,router_Router,43120,1228,1228,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1228 with message body Id=690, Doc Identifier=334700.20730, SessionId=1228 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.130,,Error
+2012,router_Router,43120,1227,1227,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1227 with message body Id=689, Doc Identifier=334700.20729, SessionId=1227 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.106,,Error
+2011,router_Router,43120,1226,1226,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1226 with message body Id=688, Doc Identifier=334700.20728, SessionId=1226 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.080,,Error
+2010,router_Router,43120,1224,1224,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1224 with message body Id=686, Doc Identifier=334700.20726, SessionId=1224 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.033,,Error
+2009,router_Router,43120,1223,1223,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1223 with message body Id=685, Doc Identifier=334700.20725, SessionId=1223 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:10.009,,Error
+2008,router_Router,43120,1222,1222,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1222 with message body Id=684, Doc Identifier=334700.20724, SessionId=1222 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.985,,Error
+2007,router_Router,43120,1221,1221,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1221 with message body Id=683, Doc Identifier=334700.20723, SessionId=1221 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.965,,Error
+2006,router_Router,43120,1220,1220,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1220 with message body Id=682, Doc Identifier=334700.20722, SessionId=1220 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.941,,Error
+2005,router_Router,43120,1219,1219,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1219 with message body Id=681, Doc Identifier=334700.20721, SessionId=1219 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.916,,Error
+2004,router_Router,43120,1218,1218,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1218 with message body Id=680, Doc Identifier=334700.20720, SessionId=1218 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.897,,Error
+2003,router_Router,43120,1217,1217,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1217 with message body Id=679, Doc Identifier=334700.20719, SessionId=1217 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.878,,Error
+2002,router_Router,43120,1216,1216,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1216 with message body Id=678, Doc Identifier=334700.20718, SessionId=1216 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.854,,Error
+2001,router_Router,43120,1215,1215,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1215 with message body Id=677, Doc Identifier=334700.20717, SessionId=1215 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.829,,Error
+2000,router_Router,43120,1214,1214,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1214 with message body Id=676, Doc Identifier=334700.20716, SessionId=1214 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.803,,Error
+1999,router_Router,43120,1213,1213,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1213 with message body Id=675, Doc Identifier=334700.20715, SessionId=1213 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.777,,Error
+1998,router_Router,43120,1212,1212,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1212 with message body Id=674, Doc Identifier=334700.20714, SessionId=1212 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.752,,Error
+1997,router_Router,43120,1211,1211,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1211 with message body Id=673, Doc Identifier=334700.20713, SessionId=1211 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.728,,Error
+1996,router_Router,43120,1210,1210,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1210 with message body Id=672, Doc Identifier=334700.20712, SessionId=1210 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.703,,Error
+1995,router_Router,43120,1209,1209,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1209 with message body Id=671, Doc Identifier=334700.20711, SessionId=1209 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.",2026-03-18 19:00:09.679,,Error
+1994,router_Router,43120,1208,1208,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1208 with message body Id=670, Doc Identifier=334700.20710, SessionId=1208 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.654,,Error
+1993,router_Router,43120,1207,1207,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1207 with message body Id=669, Doc Identifier=334700.20709, SessionId=1207 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.629,,Error
+1992,router_Router,43120,1206,1206,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1206 with message body Id=668, Doc Identifier=334700.20708, SessionId=1206 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.605,,Error
+1991,router_Router,43120,1205,1205,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1205 with message body Id=667, Doc Identifier=334700.20707, SessionId=1205 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.580,,Error
+1990,router_Router,43120,1204,1204,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1204 with message body Id=666, Doc Identifier=334700.20706, SessionId=1204 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.556,,Error
+1989,router_Router,43120,1203,1203,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1203 with message body Id=665, Doc Identifier=334700.20705, SessionId=1203 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.538,,Error
+1988,router_Router,43120,1202,1202,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1202 with message body Id=664, Doc Identifier=334700.20704, SessionId=1202 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.513,,Error
+1987,router_Router,43120,1201,1201,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1201 with message body Id=663, Doc Identifier=334700.20703, SessionId=1201 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.488,,Error
+1986,router_Router,43120,1200,1200,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1200 with message body Id=662, Doc Identifier=334700.20702, SessionId=1200 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.464,,Error
+1985,router_Router,43120,1199,1199,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1199 with message body Id=661, Doc Identifier=334700.20701, SessionId=1199 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.439,,Error
+1984,router_Router,43120,1198,1198,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1198 with message body Id=660, Doc Identifier=334700.20700, SessionId=1198 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.415,,Error
+1983,router_Router,43120,1197,1197,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1197 with message body Id=659, Doc Identifier=334700.20699, SessionId=1197 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.",2026-03-18 19:00:09.389,,Error
+1982,router_Router,43120,1196,1196,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1196 with message body Id=658, Doc Identifier=334700.20698, SessionId=1196 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.362,,Error
+1981,router_Router,43120,1195,1195,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1195 with message body Id=657, Doc Identifier=334700.20697, SessionId=1195 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.",2026-03-18 19:00:09.336,,Error
+1980,router_Router,43120,1194,1194,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1194 with message body Id=656, Doc Identifier=334700.20696, SessionId=1194 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.311,,Error
+1979,router_Router,43120,1193,1193,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1193 with message body Id=655, Doc Identifier=334700.20695, SessionId=1193 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.289,,Error
+1978,router_Router,43120,1192,1192,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1192 with message body Id=654, Doc Identifier=334700.20694, SessionId=1192 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.263,,Error
+1977,router_Router,43120,1191,1191,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1191 with message body Id=653, Doc Identifier=334700.20693, SessionId=1191 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.239,,Error
+1976,router_Router,43120,1190,1190,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1190 with message body Id=652, Doc Identifier=334700.20692, SessionId=1190 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.214,,Error
+1975,router_Router,43120,1189,1189,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1189 with message body Id=651, Doc Identifier=334700.20691, SessionId=1189 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.188,,Error
+1974,router_Router,43120,1188,1188,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1188 with message body Id=650, Doc Identifier=334700.20690, SessionId=1188 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.163,,Error
+1973,router_Router,43120,1187,1187,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1187 with message body Id=649, Doc Identifier=334700.20689, SessionId=1187 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.138,,Error
+1972,router_Router,43120,1186,1186,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1186 with message body Id=648, Doc Identifier=334700.20688, SessionId=1186 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.113,,Error
+1971,router_Router,43120,1185,1185,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1185 with message body Id=647, Doc Identifier=334700.20687, SessionId=1185 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.087,,Error
+1970,router_Router,43120,1184,1184,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1184 with message body Id=646, Doc Identifier=334700.20686, SessionId=1184 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.064,,Error
+1969,router_Router,43120,1183,1183,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1183 with message body Id=645, Doc Identifier=334700.20685, SessionId=1183 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:09.042,,Error
+1968,router_Router,43120,1180,1180,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1180 with message body Id=642, Doc Identifier=334700.20682, SessionId=1180 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.978,,Error
+1967,router_Router,43120,1179,1179,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1179 with message body Id=641, Doc Identifier=334700.20681, SessionId=1179 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.953,,Error
+1966,router_Router,43120,1178,1178,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1178 with message body Id=640, Doc Identifier=334700.20680, SessionId=1178 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.927,,Error
+1965,router_Router,43120,1177,1177,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1177 with message body Id=639, Doc Identifier=334700.20679, SessionId=1177 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.901,,Error
+1964,router_Router,43120,1176,1176,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1176 with message body Id=638, Doc Identifier=334700.20678, SessionId=1176 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.876,,Error
+1963,router_Router,43120,1175,1175,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1175 with message body Id=637, Doc Identifier=334700.20677, SessionId=1175 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.851,,Error
+1962,router_Router,43120,1174,1174,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1174 with message body Id=636, Doc Identifier=334700.20676, SessionId=1174 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.826,,Error
+1961,router_Router,43120,1173,1173,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1173 with message body Id=635, Doc Identifier=334700.20675, SessionId=1173 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.801,,Error
+1960,router_Router,43120,1172,1172,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1172 with message body Id=634, Doc Identifier=334700.20674, SessionId=1172 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.776,,Error
+1957,router_Router,43120,1171,1171,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1171 with message body Id=633, Doc Identifier=334700.20673, SessionId=1171 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.750,,Error
+1953,router_Router,43120,1170,1170,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1170 with message body Id=632, Doc Identifier=334700.20672, SessionId=1170 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.726,,Error
+1948,router_Router,43120,1169,1169,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1169 with message body Id=631, Doc Identifier=334700.20671, SessionId=1169 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.701,,Error
+1944,router_Router,43120,1168,1168,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1168 with message body Id=630, Doc Identifier=334700.20670, SessionId=1168 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.676,,Error
+1939,router_Router,43120,1167,1167,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1167 with message body Id=629, Doc Identifier=334700.20669, SessionId=1167 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.650,,Error
+1935,router_Router,43120,1166,1166,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1166 with message body Id=628, Doc Identifier=334700.20668, SessionId=1166 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.625,,Error
+1930,router_Router,43120,1165,1165,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1165 with message body Id=627, Doc Identifier=334700.20667, SessionId=1165 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.599,,Error
+1921,router_Router,43120,1163,1163,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1163 with message body Id=625, Doc Identifier=334700.20665, SessionId=1163 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.549,,Error
+1917,router_Router,43120,1162,1162,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1162 with message body Id=624, Doc Identifier=334700.20664, SessionId=1162 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.524,,Error
+1912,router_Router,43120,1161,1161,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1161 with message body Id=623, Doc Identifier=334700.20663, SessionId=1161 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.500,,Error
+1908,router_Router,43120,1160,1160,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1160 with message body Id=622, Doc Identifier=334700.20662, SessionId=1160 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.474,,Error
+1903,router_Router,43120,1159,1159,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1159 with message body Id=621, Doc Identifier=334700.20661, SessionId=1159 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.447,,Error
+1898,router_Router,43120,1158,1158,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1158 with message body Id=620, Doc Identifier=334700.20660, SessionId=1158 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.423,,Error
+1893,router_Router,43120,1157,1157,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1157 with message body Id=619, Doc Identifier=334700.20659, SessionId=1157 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.398,,Error
+1889,router_Router,43120,1156,1156,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1156 with message body Id=618, Doc Identifier=334700.20658, SessionId=1156 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.373,,Error
+1884,router_Router,43120,1155,1155,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1155 with message body Id=617, Doc Identifier=334700.20657, SessionId=1155 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.347,,Error
+1880,router_Router,43120,1154,1154,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1154 with message body Id=616, Doc Identifier=334700.20656, SessionId=1154 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.",2026-03-18 19:00:08.322,,Error
+1875,router_Router,43120,1153,1153,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1153 with message body Id=615, Doc Identifier=334700.20655, SessionId=1153 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.",2026-03-18 19:00:08.296,,Error
+1870,router_Router,43120,1152,1152,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1152 with message body Id=614, Doc Identifier=334700.20654, SessionId=1152 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.
++
+ERROR <Ens>ErrGeneral: Unescaped separator(s) (|^~&) found in value 'bark &bite' for elementary data type 'ST' at segment 5:DG1, field 3, repetition 1, component 2, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Component data structure not obeyed in segment 5:DG1.  Field 3, repetition 1, component 2 has more subcomponents than permitted by data structure 2.5.1:ST.",2026-03-18 19:00:08.271,,Error
+1866,router_Router,43120,1151,1151,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1151 with message body Id=613, Doc Identifier=334700.20653, SessionId=1151 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.246,,Error
+1861,router_Router,43120,1150,1150,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1150 with message body Id=612, Doc Identifier=334700.20652, SessionId=1150 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.220,,Error
+1857,router_Router,43120,1149,1149,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1149 with message body Id=611, Doc Identifier=334700.20651, SessionId=1149 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.196,,Error
+1853,router_Router,43120,1148,1148,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1148 with message body Id=610, Doc Identifier=334700.20650, SessionId=1148 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Unescaped separator(s) (|^~&) found in value 'bark &bite' for elementary data type 'ST' at segment 5:DG1, field 3, repetition 1, component 2, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Component data structure not obeyed in segment 5:DG1.  Field 3, repetition 1, component 2 has more subcomponents than permitted by data structure 2.5.1:ST.",2026-03-18 19:00:08.176,,Error
+1848,router_Router,43120,1147,1147,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1147 with message body Id=609, Doc Identifier=334700.20649, SessionId=1147 because of validation failure: ERROR <EnsEDI>ErrMapRequired: Missing required PV1 element at segment 4 (DG1)
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.150,,Error
+1845,router_Router,43120,1146,1146,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1146 with message body Id=608, Doc Identifier=334700.20648, SessionId=1146 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.127,,Error
+1840,router_Router,43120,1145,1145,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1145 with message body Id=607, Doc Identifier=334700.20647, SessionId=1145 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.100,,Error
+1836,router_Router,43120,1144,1144,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1144 with message body Id=606, Doc Identifier=334700.20646, SessionId=1144 because of validation failure: ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 1:MSH, field 7, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid date/time value '2026' found for type 'DTM' in segment 2:EVN, field 2, repetition 1, component 1, subcomponent 1.
++
+ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 19:00:08.074,,Error
+1832,router_Router,43120,1143,1143,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1143 with message body Id=605, Doc Identifier=334700.20745, SessionId=1143 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 18:51:53.168,,Error
+1831,router_Router,43120,1142,1142,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1142 with message body Id=604, Doc Identifier=334700.20744, SessionId=1142 because of validation failure: ERROR <Ens>ErrGeneral: Invalid value 'X' appears in segment 3:PID, field 8, repetition 1, component 1, subcomponent 1, but does not appear in code table 2.5.1:1.
++
+ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 18:51:53.145,,Error
+1830,router_Router,43120,1141,1141,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1141 with message body Id=603, Doc Identifier=334700.20743, SessionId=1141 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 18:51:53.121,,Error
+1829,router_Router,43120,1140,1140,EnsLib.HL7.MsgRouter.RoutingEngine,OnError,"ERROR <Ens>ErrGeneral: Not forwarding message 1140 with message body Id=602, Doc Identifier=334700.20742, SessionId=1140 because of validation failure: ERROR <Ens>ErrGeneral: Required field missing in segment 3:PID.  Missing field 18, which is required in segment structure INPCADTPart2:PID.",2026-03-18 18:51:53.098,,Error
