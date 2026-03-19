@@ -16,6 +16,7 @@ A Streamlit dashboard for analyzing HL7 validation error logs exported from Inte
 [hl7-validation-error-profiler.streamlit.app](https://hl7-validation-error-profiler.streamlit.app)
 
 > Note: PDF export is disabled on Streamlit Cloud due to Chromium dependencies. Run locally for full functionality.
+> Prerequisite: You need a CSV export from the Ens_Util.Log table (Event Log table) from InterSystems HealthConnect.
 
 ## Quick Start
 
