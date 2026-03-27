@@ -9,13 +9,14 @@ A Streamlit dashboard for analyzing HL7 validation error logs exported from Inte
 - **Visual Trace Integration**: Message IDs link directly to InterSystems HealthConnect Visual Trace
 - **Error Distribution Chart**: Plotly bar chart with InterSystems brand colors
 - **Filterable Message Table**: Filter by error type to drill into specific issues
+- **Chat with Your Data**: AI-powered chatbot in the sidebar that answers questions about the uploaded error log using GPT-4o
 - **PDF Export** (local only): One-page professional report generated via OpenAI GPT-4o and Playwright
 
 ## Live Demo
 
 [hl7-validation-error-profiler.streamlit.app](https://hl7-validation-error-profiler.streamlit.app)
 
-> Note: PDF export is disabled on Streamlit Cloud due to Chromium dependencies. Run locally for full functionality.
+> Note: PDF export is disabled on Streamlit Cloud due to Chromium dependencies. The chatbot requires an OpenAI API key. Run locally for full functionality.
 > Prerequisite: You need a CSV export from the Ens_Util.Log table (Event Log table) from InterSystems HealthConnect.
 
 ## Quick Start
@@ -26,7 +27,7 @@ playwright install chromium
 streamlit run app.py
 ```
 
-Create a `.env` file with your OpenAI API key (required for PDF export):
+Create a `.env` file with your OpenAI API key (required for PDF export and chatbot):
 
 ```
 OPENAI_API_KEY=sk-...

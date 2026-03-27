@@ -132,11 +132,16 @@ streamlit run app.py
   - Text input: "Who is the report for?" (organization name)
   - "Generate PDF Report" button (only appears when org name is entered)
   - "Download PDF Report" button (appears after generation completes)
+* **Chat with Your Data**: GPT-4o-powered chatbot for asking questions about the uploaded CSV data
+  - Answers questions like "which error is most common?" or "show me the raw error log for message ID 1243"
+  - Scoped to CSV data only — declines questions outside the uploaded error log
+  - Maintains conversation history within the session
+  - Context includes: error summary, per-message details, and raw error log text
 
 ### Header Section (compact layout)
 
 Left column (3/4 width):
-* `st.metric` showing Total Messages Analyzed
+* Custom HTML showing Total Messages Analyzed (1.72em font)
 * High-frequency warning banners (amber) for errors appearing in >50% of messages
 * **Error Summary**: 3-column layout showing each error type with percentage in gray text, percentages in bold navy
 
@@ -202,5 +207,6 @@ The tool is successful if a user can:
 2. Immediately see total messages analyzed, most common validation failures, which HL7 requirements are violated, and which messages contain which errors
 3. Click through to Visual Trace for any message
 4. Export a polished PDF report for a named organization
+5. Ask natural-language questions about the error data via the sidebar chatbot
 
 All within a single screen.

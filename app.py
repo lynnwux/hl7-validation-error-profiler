@@ -74,8 +74,8 @@ def normalize_error(raw: str) -> str:
 REQUIRED_COLUMNS = {"ConfigName", "MessageId", "SessionId", "TimeLogged", "Text"}
 
 
-def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Return (message_df, error_summary_df)."""
+def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Return (message_df, error_summary_df, raw_df)."""
     for enc in ("utf-8", "cp1252", "latin-1"):
         try:
             if hasattr(csv_path, "seek"):
@@ -142,7 +142,7 @@ def load_and_process(csv_path) -> tuple[pd.DataFrame, pd.DataFrame]:
         )
     summary_df = pd.DataFrame(summary_rows)
 
-    return msg_df, summary_df
+    return msg_df, summary_df, df
 
 
 INTERSYSTEMS_TEAL = "#00B2A9"
@@ -355,7 +355,7 @@ else:
     st.warning("Please upload a CSV file to get started.")
     st.stop()
 
-msg_df, summary_df = load_and_process(csv_source)
+msg_df, summary_df, raw_df = load_and_process(csv_source)
 
 _is_cloud = not Path(__file__).parent.joinpath(".env").exists()
 
@@ -387,8 +387,67 @@ def _pdf_sidebar():
     else:
         st.info("Enter an organization name to enable PDF export.")
 
+def _build_chat_context(msg_df: pd.DataFrame, summary_df: pd.DataFrame, raw_df: pd.DataFrame) -> str:
+    """Build a text summary of the CSV data for the chatbot system prompt."""
+    total = len(msg_df)
+    lines = [f"Total messages analyzed: {total}\n"]
+    lines.append("Error Summary:")
+    for _, r in summary_df.iterrows():
+        lines.append(f"  - {r['error_type']}: {r['count']} messages ({r['percentage']}%)")
+    lines.append(f"\nMessage details (MessageId, SessionId, TimeLogged, error_count, errors):")
+    for _, r in msg_df.iterrows():
+        lines.append(f"  MessageId={r['MessageId']} SessionId={r['SessionId']} TimeLogged={r['TimeLogged']} errors={r['error_list']}")
+    lines.append(f"\nRaw error log Text by MessageId:")
+    for _, r in raw_df.iterrows():
+        lines.append(f"  MessageId={r['MessageId']}: {str(r['Text'])[:500]}")
+    return "\n".join(lines)
+
+
+CHAT_SYSTEM_PROMPT = """You are a helpful assistant that answers questions about HL7 validation error data from a CSV log file.
+You ONLY answer questions about the data provided below. If the user asks about anything outside the CSV data, politely decline and explain you can only help with the uploaded error log data.
+Be concise and direct in your answers.
+
+Here is the data:
+
+{context}"""
+
+
 with st.sidebar:
     _pdf_sidebar()
+
+    st.markdown("---")
+    st.markdown("### Chat with Your Data")
+
+    if "chat_messages" not in st.session_state:
+        st.session_state.chat_messages = []
+
+    for msg in st.session_state.chat_messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
+    if prompt := st.chat_input("Ask about your error data..."):
+        st.session_state.chat_messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+
+        context = _build_chat_context(msg_df, summary_df, raw_df)
+        client = openai.OpenAI()
+        messages = [
+            {"role": "system", "content": CHAT_SYSTEM_PROMPT.format(context=context)},
+        ] + [{"role": m["role"], "content": m["content"]} for m in st.session_state.chat_messages]
+
+        with st.chat_message("assistant"):
+            with st.spinner("Thinking..."):
+                response = client.chat.completions.create(
+                    model="gpt-4o",
+                    messages=messages,
+                    temperature=0.3,
+                )
+                reply = response.choices[0].message.content.strip()
+            st.markdown(reply)
+
+        st.session_state.chat_messages.append({"role": "assistant", "content": reply})
+
 total_messages = len(msg_df)
 
 # --- Header + Ring + Summary (compact) ---
